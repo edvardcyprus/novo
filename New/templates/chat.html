@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <link rel="stylesheet" type="text/css" href="../style.css">
+    <meta charset="UTF-8">
+    <title>Support</title>
+    <meta http-equiv="Content-Type">
+</head>
+<body>
+
+
+         <script>
+         function Copytextfunction() {
+  var value = document.getElementById("myInput").value;
+  var copyText = document.createElement("textarea");
+  copyText.value = value;
+  copyText.style.position = "fixed";
+  copyText.style.top = "-1000vh";
+  document.body.append(copyText)
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  console.log(value)
+  copyText.remove()
+}
+         </script>
+  
+<div class="columnen">
+  <button onclick="Copytextfunction()"></button>
+</div>
+
+<div class="textniz">
+  <textarea id="myInput" name="myInput" readonly>
+To change your phone number:
+1. Click "Account" in the top right of Fonbet.
+2. Select "Change phone number".
+3. Enter your new phone number and your current password, then click "Send".
+4. You will receive an SMS with the verification code on your old phone number.
+5. Enter the verification code and click "Send".
+6. You will receive an SMS with the verification code on your new phone number.
+7. Enter the verification code and click "Send".</textarea>
+ </div>
+
+ <a href="../index.html">Index</a>
+  </body>
+  </html>
